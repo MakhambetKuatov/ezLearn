@@ -1,0 +1,60 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block navbar %} 
+<link rel="stylesheet" href="{% static 'main/css/product.css' %}">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item"><a class="nav-link" href="lessons">Lessons</a></li>
+    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#bnav">Contact</a></li>
+    </ul>
+</div>
+{% endblock %}
+{% block content %} 
+<div class="container-fluid">
+<div class="product">
+  <div>
+      <h1>ezLearn</h1>
+      <p>ezLearn is a cloud-based online eLearning tool suitable for learning school subjects. The tool publishes 100% mobile responsive content and can be uploaded to any platform, from any location.</p>
+</div>
+</div>
+</div>
+<div class="providing">
+<h4>Why should you use our app</h4>
+<div>
+<p>We provide scalability which helps in providing training. All students can receive the same type of syllabus, study materials and train through ezLearn.</p>
+<img src="{% static 'main/images/scalable.jpg' %}" alt="">
+</div>
+</div>
+<div class="benefit">
+<h4>Our benefits</h4>
+<div>
+<p>Through ezLearn, you can save time, money and reduced transportation cost. so, ezLearn is cost-effective compared to traditional learning.</p>
+<img src="{% static 'main/images/save-time.webp' %}" alt="">
+</div>
+</div>
+<div class="goals">
+<h4>Our goals</h4>
+
+<div>
+  <ul>
+    <li>Enhance the quality of learning and teaching</li>
+    <li>Meet the learning style or needs of students</li>
+    <li>Improve the efficiency and effectiveness</li>
+    <li>Improve user-accessibility and time flexibility to engage learners in the learning process</li>
+  </ul>
+  <img src="{% static 'main/images/Productivity-featured.png' %}" alt="">
+
+</div>
+  
+</div>
+<div class="downloads">
+<h4>Download it</h4>
+<p>Right now we only support phones based on Android OS, we opologize for that. We will try to make Mobile app for IOS OS sooner</p>
+<a class="nav-link" href="">Download</a>
+</div>
+{% endblock %}
+
